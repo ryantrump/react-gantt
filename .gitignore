@@ -1,0 +1,11 @@
+#compiled output
+/dist
+
+# dependencies
+/node_modules
+
+# misc
+/.sass-cache
+.DS_Store
+Thumbs.db
+npm-debug.log
