@@ -1,0 +1,67 @@
+.container div {
+    height: 40px;
+}
+
+.tree-view {
+    padding-top: 40px;
+    width: 200px;
+    height: auto !important;
+    float: left;
+
+    border-right: 1px solid #999;
+}
+
+.tree-view .cell {
+    border-bottom: 1px solid #999;
+    padding-left: 5px;
+}
+
+.tree-view .cell:first-child {
+    border-top: 1px solid #999;
+}
+
+.main {
+    float: left;
+}
+
+.header {
+    border-bottom: 1px solid #999;
+}
+
+.header .column,
+.body .column {
+    border-right: 1px solid #999;
+    width: 150px;
+    float: left;
+}
+
+.tree-view .cell,
+.header .column {
+    display: flex;
+    align-items: center;
+}
+
+.header .column {
+    justify-content: center;
+}
+
+.body .row {
+    border-bottom: 1px solid #999;
+}
+
+.body .column {
+    border-right: 1px solid #999;
+}
+
+.row {
+    position: relative;
+}
+
+.task {
+    background: #888;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    height: 30px !important;
+    width: 290px;
+}

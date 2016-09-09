@@ -1,0 +1,106 @@
+import React, { Component } from 'react';
+import './App.css';
+
+
+class App extends Component {
+
+    constructor() {
+        super();
+
+        this.state = {
+            container_width: 2000
+        }
+    }
+
+    componentDidMount() {
+        let tree_width = document.querySelector('.tree-view').offsetWidth;
+        let main_width = document.querySelector('.main').offsetWidth;
+        let total_width = tree_width + main_width;
+
+        this.setState({
+            container_width: total_width
+        });
+    }
+
+    render() {
+        return (
+            <div className="container" style={{ width: this.state.container_width + 'px' }}>
+
+                <div className="tree-view">
+                    <div className="row / cell">Facebook</div>
+                    <div className="row / cell">React</div>
+                    <div className="row / cell">Bing</div>
+                </div>
+
+                <div className="main">
+
+                    <div className="header row">
+                        <div className="column">1st</div>
+                        <div className="column">2nd</div>
+                        <div className="column">3rd</div>
+                        <div className="column">4th</div>
+                        <div className="column">5th</div>
+                        <div className="column">6th</div>
+                        <div className="column">7th</div>
+                        <div className="column">8th</div>
+                        <div className="column">9th</div>
+                        <div className="column">10th</div>
+                        <div className="column">11th</div>
+                        <div className="column">12th</div>
+                    </div>
+                    <div className="body">
+                        <div className="row">
+                            <div className="task"></div>
+                            <div className="column"></div>
+                            <div className="column"></div>
+                            <div className="column"></div>
+                            <div className="column"></div>
+                            <div className="column"></div>
+                            <div className="column"></div>
+                            <div className="column"></div>
+                            <div className="column"></div>
+                            <div className="column"></div>
+                            <div className="column"></div>
+                            <div className="column"></div>
+                            <div className="column"></div>
+                        </div>
+                        <div className="row">
+                            <div className="task"></div>
+                            <div className="column"></div>
+                            <div className="column"></div>
+                            <div className="column"></div>
+                            <div className="column"></div>
+                            <div className="column"></div>
+                            <div className="column"></div>
+                            <div className="column"></div>
+                            <div className="column"></div>
+                            <div className="column"></div>
+                            <div className="column"></div>
+                            <div className="column"></div>
+                            <div className="column"></div>
+                        </div>
+                        <div className="row">
+                            <div className="task"></div>
+                            <div className="column"></div>
+                            <div className="column"></div>
+                            <div className="column"></div>
+                            <div className="column"></div>
+                            <div className="column"></div>
+                            <div className="column"></div>
+                            <div className="column"></div>
+                            <div className="column"></div>
+                            <div className="column"></div>
+                            <div className="column"></div>
+                            <div className="column"></div>
+                            <div className="column"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        );
+    }
+}
+
+export default App;
